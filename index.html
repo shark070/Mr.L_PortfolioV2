@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mr. L | Web3 Moderator & Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+
+<body>
+    <div class="background-container" id="canvas-container">
+        <!-- Three.js Canvas will be appended here -->
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">Mr.L</div>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+        </button>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <button id="theme-toggle" class="icon-btn" aria-label="Portfolio V1" style="font-weight: 700; font-size: 0.85rem;">V1</button>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <span class="tag">PORTFOLIO V2</span>
+        <h1 class="hero-title">Mr.L</h1>
+        <h2 class="hero-subtitle"><span class="highlight">Web3</span> Moderator & Designer</h2>
+        <p class="hero-description">
+            Building crypto communities through moderation + digital art.
+        </p>
+
+        <div class="social-links">
+            <a href="https://x.com/MrlSharkx" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg> Twitter
+            </a>
+            <a href="https://t.me/sharkx070" target="_blank" class="social-btn">
+                <i data-lucide="send"></i> Telegram
+            </a>
+            <a href="https://www.linkedin.com/in/anuvind-m-/" target="_blank" class="social-btn">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg> LinkedIn
+            </a>
+            <a href="mailto:sharkx070@gmail.com" class="social-btn">
+                <i data-lucide="mail"></i> Email
+            </a>
+        </div>
+
+        <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+            <span class="scroll-text">SCROLL</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- About Section -->
+    <section id="about" class="section hide-on-scroll">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="highlight" style="font-weight: bold; margin-bottom: 1rem; color: #fff;">Web3 Contributor focused on Community Building, Moderation & Digital Design.</p>
+                    <p>
+                        I'm Mr.L, a Web3 contributor passionate about building engaged communities and supporting innovative blockchain projects. Over the past <span style="color: #fff; font-weight: 600;">four years</span>, I've worked with crypto communities, moderated discussions, organized community initiatives, and helped projects create meaningful connections with their users.
+                    </p>
+                    <p>
+                        I believe strong communities are the foundation of every successful Web3 ecosystem. My focus is on fostering engagement, maintaining healthy discussions, and contributing to the growth of decentralized projects through community-driven strategies.
+                    </p>
+                </div>
+                <!-- Profile Visual -->
+                <!-- Stats Visual -->
+                <div class="about-visual">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <h3 class="stat-number">25K+</h3>
+                            <p class="stat-label">Members Managed</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number">10+</h3>
+                            <p class="stat-label">Projects</p>
+                        </div>
+                        <div class="stat-card">
+                            <h3 class="stat-number">4+</h3>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title hide-on-scroll">My <span class="highlight">Experience</span></h2>
+            <div class="timeline-container">
+                <div class="timeline-item hide-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h3 class="timeline-role">Community Moderator</h3>
+                            <h4 class="timeline-company"><a href="https://t.me/+z9ju9E3IXBEwNTdl" target="_blank">CryptoMonkey</a></h4>
+                        </div>
+                        <p class="timeline-desc">Contributed to the CryptoMonkey community through active moderation, user support, and engagement strategies.</p>
+                    </div>
+                </div>
+                <div class="timeline-item hide-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h3 class="timeline-role">Ambassador</h3>
+                            <h4 class="timeline-company"><a href="https://x.com/PicWeGlobal" target="_blank">PicWe</a></h4>
+                        </div>
+                        <p class="timeline-desc">Served as an Ambassador for PicWe, helping communicate updates, educate users, and support community awareness.</p>
+                    </div>
+                </div>
+                <div class="timeline-item hide-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h3 class="timeline-role">Ambassador</h3>
+                            <h4 class="timeline-company"><a href="https://x.com/LumioMarket" target="_blank">Lumio</a></h4>
+                        </div>
+                        <p class="timeline-desc">Contributed to the Lumio community through moderation, user support, and communication.</p>
+                    </div>
+                </div>
+                <div class="timeline-item hide-on-scroll">
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <span class="timeline-date">2025 - Present</span>
+                            <h3 class="timeline-role">OG Member</h3>
+                            <h4 class="timeline-company"><a href="https://x.com/NaorisProtocol" target="_blank">Naoris Protocol</a></h4>
+                        </div>
+                        <p class="timeline-desc">Early community member of Naoris Protocol, actively participating in ecosystem activities, community engagement, campaigns, and project growth initiatives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section hide-on-scroll">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Projects</span></h2>
+            <div class="gallery-marquee">
+                <div class="gallery-track">
+                    <!-- Original Set -->
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project1.png" alt="Project 1" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project2.png" alt="Project 2" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project3.jpg" alt="Project 3" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project4.png" alt="Project 4" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project5.jpg" alt="Project 5" class="gallery-img">
+                    </div>
+
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project6.png" alt="Project 6" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project7.png" alt="Project 7" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project8.png" alt="Project 8" class="gallery-img">
+                    </div>
+
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project6.png" alt="Project 6" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project7.png" alt="Project 7" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project8.png" alt="Project 8" class="gallery-img">
+                    </div>
+
+                    <!-- Duplicated Set for Seamless Loop -->
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project1.png" alt="Project 1" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project2.png" alt="Project 2" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project3.jpg" alt="Project 3" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project4.png" alt="Project 4" class="gallery-img">
+                    </div>
+                    <div class="glass-card gallery-item">
+                        <img src="assets/project5.jpg" alt="Project 5" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section hide-on-scroll">
+        <div class="container contact-container">
+            <h2 class="section-title">Ready to Grow Your <span class="highlight">Community?</span></h2>
+            <p class="contact-text">Let's create engaging experiences and build stronger Web3 ecosystems together.</p>
+            <a href="mailto:sharkx070@gmail.com" class="cta-button">
+                Let's Build Together
+            </a>
+            <div class="social-links contact-socials">
+                <a href="https://x.com/MrlSharkx" target="_blank" class="social-btn">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg> Twitter
+                </a>
+                <a href="https://discord.com/users/sharkx070" target="_blank" class="social-btn">
+                    <i data-lucide="message-circle"></i> Discord
+                </a>
+                <a href="https://t.me/sharkx070" target="_blank" class="social-btn">
+                    <i data-lucide="send"></i> Telegram
+                </a>
+                <a href="https://www.linkedin.com/in/anuvind-m-/" target="_blank" class="social-btn">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                        <rect x="2" y="9" width="4" height="12"></rect>
+                        <circle cx="4" cy="4" r="2"></circle>
+                    </svg> LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Mr.L • Portfolio V2</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="imageModal" class="image-modal"><button class="nav-btn prev-btn">&#10094;</button>
+        <span class="close-modal">&times;</span>
+        <img id="modalImage" src="" alt="Project Preview"><button class="nav-btn next-btn">&#10095;</button>
+    </div>
+
+</body>
+
+</html>
